@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-rdx/static/css/main.2e48f9fb.css",
+    "main.js": "/todo-rdx/static/js/main.673b5a89.js",
+    "index.html": "/todo-rdx/index.html",
+    "main.2e48f9fb.css.map": "/todo-rdx/static/css/main.2e48f9fb.css.map",
+    "main.673b5a89.js.map": "/todo-rdx/static/js/main.673b5a89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e48f9fb.css",
+    "static/js/main.673b5a89.js"
+  ]
+}
