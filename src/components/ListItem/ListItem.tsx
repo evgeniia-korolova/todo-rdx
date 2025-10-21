@@ -1,12 +1,17 @@
-import React from 'react';
 import { TodoItem } from '../../models/todo-item.interface';
 import classes from './ListItem.module.scss';
+import { Link } from 'react-router-dom';
 
 export const ListItem = ({ todo }: { todo: TodoItem }) => {
 	return (
-		<a className={`${classes.link} ${todo.completed ? classes.completed : classes.uncompleted}`} href={`/list/${todo.id}`}>
+		<Link
+			className={`${classes.link} ${
+				todo.completed ? classes.completed : classes.uncompleted
+			}`}
+			to={`/list/${todo.id}`}
+		>
 			{' '}
 			{todo.title}{' '}
-		</a>
+		</Link>
 	);
 };
