@@ -1,15 +1,18 @@
 import React from 'react';
 import { TodoItem } from '../models/todo-item.interface';
 import { ListItem } from '../components/ListItem/ListItem';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
 
-interface ComponentProps {
-  todos: TodoItem[]
-}
+export const ViewList = () => {
+	
+	const todoList = useSelector(
+		(state: RootState) => state.todoList.todos
+	);
 
-export const HomePage = ({todos}: ComponentProps) => {
 	return (
 		<div className='container'>
-			{todos.map((todo: TodoItem) => {
+			{todoList.map((todo: TodoItem) => {
 				return <ListItem todo={todo} key={todo.id} />;
 			})}
 		</div>

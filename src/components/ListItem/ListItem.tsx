@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import { TodoItem } from '../../models/todo-item.interface';
 import classes from './ListItem.module.scss';
-import { Link } from 'react-router-dom';
 
 export const ListItem = ({ todo }: { todo: TodoItem }) => {
 	return (

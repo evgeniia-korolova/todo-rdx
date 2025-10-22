@@ -4,7 +4,8 @@ import classes from './Form.module.scss';
 export const Form = (props: { createNewToDo: Function }) => {
 	const [title, setTitle] = useState<string>('');
 
-	const formSubmit = () => {
+	const formSubmit = (event: React.SyntheticEvent) => {
+		event.preventDefault()
 		if (title) {
 			props.createNewToDo(title);
 			setTitle('');
