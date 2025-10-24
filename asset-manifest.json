@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/todo-rdx/static/js/main.b896d023.js",
+    "main.js": "/todo-rdx/static/js/main.5291e124.js",
     "index.html": "/todo-rdx/index.html",
-    "main.b896d023.js.map": "/todo-rdx/static/js/main.b896d023.js.map"
+    "main.5291e124.js.map": "/todo-rdx/static/js/main.5291e124.js.map"
   },
   "entrypoints": [
-    "static/js/main.b896d023.js"
+    "static/js/main.5291e124.js"
   ]
 }
